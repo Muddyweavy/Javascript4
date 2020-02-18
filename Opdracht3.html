@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Crookapp</title>
+    <style>
+      #slideholder {
+        height:300px;
+        width:300px;
+        border:3px solid black;
+        transition:1s;
+      }
+      #slideholder2 {
+        height:300px;
+        width:300px;
+        border:3px solid black;
+        transition:1s;
+      }
+      #slideholder3 {
+        height:300px;
+        width:300px;
+        border:3px solid black;
+        transition:1s;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">Opdracht1</a>
+    <a href="opdracht2.html">Opdracht2</a>
+    <div id="slideholder"></div>
+    <script>
+
+    //imageslider 1
+      var plaatjes = [1,2,3];
+      var teller = 1;
+      var slideholder = document.getElementById("slideholder");
+      slideholder.style.backgroundImage = "url('hk1.png')";
+
+      slideholder.addEventListener("click", function() {
+        slideholder.style.backgroundImage = "url('hk" + getHk() + ".png')";
+      });
+
+      function getHk() {
+        if(teller >= plaatjes.length) {
+          teller = 1;
+        } else {
+          teller++;
+        }
+        console.log(teller);
+        return teller;
+      }
+
+      //imageslider 2
+      var plaatjes2 = [4,5,6];
+      var teller2 = 1;
+      var slideholder2 = document.getElementById("slideholder2");
+      slideholder2.style.backgroundImage = "url('hk4.png')";
+
+      slideholder2.addEventListener("click", function() {
+        slideholder2.style.backgroundImage = "url('hk" + getHk2() + ".png')";
+      });
+
+      function getHk2() {
+        if(teller >= plaatjes2.length) {
+          teller2 = 4;
+        } else {
+          teller++;
+        }
+        console.log(teller);
+        return teller2;
+      }
+
+      //imageslider 3
+      var plaatjes3 = [7,8,9];
+      var teller3 = 7;
+      var slideholder3 = document.getElementById("slideholder3");
+      slideholder3.style.backgroundImage = "url('hk4.png')";
+
+      slideholder3.addEventListener("click", function() {
+        slideholder3.style.backgroundImage = "url('hk" + getHk3() + ".png')";
+      });
+
+      function getHk3() {
+        if(teller >= plaatjes3.length) {
+          teller3 = 7;
+        } else {
+          teller++;
+        }
+        console.log(teller);
+        return teller3;
+      }
+
+    </script>
+  </body>
+</html>
