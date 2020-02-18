@@ -1,0 +1,37 @@
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Autotoeter</title>
+  </head>
+  <body>
+    <a href="opdracht2.html">Opdracht2</a>
+    <a href="opdracht3.html">Opdracht3</a>
+
+  </body>
+  <script>
+    var mijnauto = {
+      kleur: "blauw",
+      merk: "ford",
+      snelheid: 0,
+
+      gasgeven: function() {
+        this.snelheid += 5
+        console.log(this.snelheid);
+      },
+
+      toeteren: function() {
+        console.log("TOET!")
+      }
+    }
+
+    console.log(mijnauto.kleur);
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.gasgeven();
+    mijnauto.toeteren();
+
+  </script>
+</html>
