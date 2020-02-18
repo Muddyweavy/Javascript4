@@ -27,6 +27,8 @@
     <a href="index.html">Opdracht1</a>
     <a href="opdracht2.html">Opdracht2</a>
     <div id="slideholder"></div>
+    <div id="slideholder2"></div>
+    <div id="slideholder3"></div>
     <script>
 
     //imageslider 1
@@ -51,7 +53,7 @@
 
       //imageslider 2
       var plaatjes2 = [4,5,6];
-      var teller2 = 1;
+      var teller2 = 4;
       var slideholder2 = document.getElementById("slideholder2");
       slideholder2.style.backgroundImage = "url('hk4.png')";
 
@@ -73,14 +75,14 @@
       var plaatjes3 = [7,8,9];
       var teller3 = 7;
       var slideholder3 = document.getElementById("slideholder3");
-      slideholder3.style.backgroundImage = "url('hk4.png')";
+      slideholder3.style.backgroundImage = "url('hk7.png')";
 
       slideholder3.addEventListener("click", function() {
         slideholder3.style.backgroundImage = "url('hk" + getHk3() + ".png')";
       });
 
       function getHk3() {
-        if(teller >= plaatjes3.length) {
+        if(teller3 >= plaatjes3.length) {
           teller3 = 7;
         } else {
           teller++;
